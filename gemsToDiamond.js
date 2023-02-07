@@ -1,24 +1,23 @@
-function gemsToDiamond(numberOne, numberTwo, numberThree) {
-  if (typeof numberOne != "number" || numberOne < 0 || typeof numberTwo != "number" || numberTwo < 0 || typeof numberThree != "number" || numberThree < 0) {
+// Function Explanation:This function takes 3 parameter. then convert Gems To Diamond.
+
+function gemsToDiamond(quantityOne, quantityTwo, quantityThird) {
+  if (typeof quantityOne != "number" || quantityOne < 0 || typeof quantityTwo != "number" || quantityTwo < 0 || typeof quantityThird != "number" || quantityThird < 0) {
     return "Provide All Number Positive";
   }
 
-  let firstFriend = 21;
-  let secondFriend = 32;
-  let thirdFriend = 43;
+  let firstFriendGems = 21;
+  let secondFriendGems = 32;
+  let thirdFriendGems = 43;
 
-  let firstDiamond = firstFriend * numberOne;
-  let secondDiamond = secondFriend * numberTwo;
-  let thirdDiamond = thirdFriend * numberThree;
+  let firstDiamond = firstFriendGems * quantityOne;
+  let secondDiamond = secondFriendGems * quantityTwo;
+  let thirdDiamond = thirdFriendGems * quantityThird;
 
   let totalDiamond = firstDiamond + secondDiamond + thirdDiamond;
 
-  if (totalDiamond > 2000) {
+  if (totalDiamond > 1000 * 2) {
     return totalDiamond - 2000;
   } else {
     return totalDiamond;
   }
 }
-
-const r = gemsToDiamond(1, 51, 1);
-console.log(r);
