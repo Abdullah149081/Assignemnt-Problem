@@ -1,3 +1,5 @@
+// Function Explanation:This function takes an array of input parameter. Then the array will count the negative elements
+
 function findingBadData(countBadData) {
   let valid = Array.isArray(countBadData);
 
@@ -16,7 +18,3 @@ function findingBadData(countBadData) {
 
   return count;
 }
-
-const r = [-4, -9, -5, -33, -55];
-const result = findingBadData(r);
-console.log(result);
