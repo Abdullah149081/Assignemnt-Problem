@@ -1,3 +1,5 @@
+// Function Explanation:This function will take a positive number as an input and then calculate multiplying, adding, dividing, subtracting return total result.
+
 function mindGame(positiveNumber) {
   if (typeof positiveNumber != "number" || positiveNumber < 0) {
     return "Please input Positive Number";
@@ -11,7 +13,3 @@ function mindGame(positiveNumber) {
 
   return positiveNumber;
 }
-
-const input = 50;
-const result = mindGame(input);
-console.log(result);
